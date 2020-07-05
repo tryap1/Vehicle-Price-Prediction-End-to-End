@@ -24,6 +24,7 @@ docutils==0.16
 entrypoints==0.3
 flake8==3.7.9
 Flask==1.1.2
+future==0.18.2
 idna @ file:///tmp/build/80754af9/idna_1593446292537/work
 imagesize==1.2.0
 importlib-metadata @ file:///C:/ci/importlib-metadata_1593446525189/work
