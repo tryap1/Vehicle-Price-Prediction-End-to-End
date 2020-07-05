@@ -1,0 +1,74 @@
+<DOCTYPE html>
+
+<html lang="en">
+<head>
+ 
+
+  <title>Car Price Prediction in India</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <div class= "container">
+        <form action = '/', method = "post">
+        <div class= "jumbotron">
+            <h1> Price Prediction</h1>
+            <p>Using Regression to Predict Used Car Values in Lakhs</p>
+        </div>
+        <div class= "container">
+            <div class= "jumbotron">
+                <div class="col-lg-3">
+                    <h3> Age of Car</h3>
+                    <input name="age" class= "form-control" placeholder="Car Age in Years" type="number", required= "required">
+                </div>   
+                <div class="col-lg-3">
+                    <h3> Initial Price in lahks </h3>
+                    <input name="price" class= "form-control" placeholder="Original Price" type="number", step= "any", required= "required">
+                </div>  
+                <div class="col-lg-3">
+                    <h3> Milleage in Kilometers</h3>
+                    <input name="km" class= "form-control" placeholder="kilometers" type="number", required= "required">
+                </div> 
+                <div class="col-lg-3">
+                     <h3> Number of Owners </h3>
+                    <input name="owners" class= "form-control" placeholder="How many people owned this car?" type="number", required= "required">
+                </div> 
+                <div class="col-lg-3">
+                <h3> Fuel Type </h3>
+                    <select name="fuel_type" class="form-control" type= "text", required= "required" >
+                        <option value="Petrol">Petrol</option>
+                        <option value="Diesel">Diesel</option>
+                        <option value="Diesel">CNG</option>
+                    </select>
+                </div>
+                <div class="col-lg-3">
+                    <h3> Seller Type </h3>
+                    <select name="seller" class="form-control" type= "text", required= "required" >
+                        <option value="Individual">Individual</option>
+                        <option value="Dealer">Dealer</option>
+                    </select>
+                </div>
+                <div class="col-lg-3">
+                    <h3> Transmission Type </h3>
+                    <select name="transmission" class="form-control" type= "text", required= "required" >
+                        <option value="Manual">Manual</option>
+                        <option value="Automatic">Automatic</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+       
+        
+        
+        <h3>{{ prediction_text }}<h3>
+        <br><br>
+        <button type="submit" class="btn btn-success">Predict Price</button>
+        </form>  
+    </div>    
+    <br><br><br>
+    <br><br>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</body>
+</html>
